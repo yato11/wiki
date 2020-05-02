@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": false
+  },
+  "eslint.workingDirectories": ["./client", "./server"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2015
+  }
+}
