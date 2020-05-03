@@ -51,6 +51,7 @@ export default function Page(props) {
     },
     avatar: {
       backgroundColor: red[500],
+      paddingRight: "5px",
     },
   }));
 

@@ -113,7 +113,9 @@ const setupCategories = async () => {
 };
 
 const setupPageIndexSearch = () => {
-  const pageCount = Page.find().count;
-  if (pageCount == 0)
+  try {
     Page._ensureIndex({ content: "text", metadata: "text", title: "text" });
+  } catch (ex) {
+    console.error("Error setupPageIndexSearch : ", ex);
+  }
 };

@@ -3,6 +3,8 @@ import { Meteor } from "meteor/meteor";
 import { useHistory } from "react-router-dom";
 import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
 import DraggableDialog from "./DraggableDialog";
+import "jquery";
+import "bootstrap/dist/js/bootstrap";
 
 export const NavBar = () => {
   const [openDialLogout, setOpenDialLogout] = React.useState(false);
@@ -62,7 +64,7 @@ export const NavBar = () => {
                 setOpenDialLogout(true);
               }}
             >
-              LogOut
+              Logout
               {/* {`${user.firstName} ${user.lastName}`} */}
             </button>
           </li>

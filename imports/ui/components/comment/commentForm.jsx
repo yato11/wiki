@@ -35,6 +35,7 @@ const CommentForm = (props) => {
   const onSubmit = (data) => {
     addComment(data.content);
     setValue("content", "");
+    window.scrollTo({ top: 10000, behavior: "smooth" });
   };
   return (
     <form className="mt-3" noValidate onSubmit={handleSubmit(onSubmit)}>

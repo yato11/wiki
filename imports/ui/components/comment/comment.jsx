@@ -36,17 +36,18 @@ const Comment = (props) => {
       </Tooltip>
       <span className="comment-action">{likes}</span>
     </span>,
-    <span key=' key="comment-basic-dislike"'>
-      <Tooltip title="Dislike">
-        {React.createElement(
-          action === "disliked" ? DislikeFilled : DislikeOutlined,
-          {
-            onClick: dislike,
-          }
-        )}
-      </Tooltip>
-      <span className="comment-action">{dislikes}</span>
-    </span>,
+    ,
+    // <span key=' key="comment-basic-dislike"'>
+    //   <Tooltip title="Dislike">
+    //     {React.createElement(
+    //       action === "disliked" ? DislikeFilled : DislikeOutlined,
+    //       {
+    //         onClick: dislike,
+    //       }
+    //     )}
+    //   </Tooltip>
+    //   <span className="comment-action">{dislikes}</span>
+    // </span>
     <span key="comment-basic-reply-to">Reply to</span>,
   ];
 
