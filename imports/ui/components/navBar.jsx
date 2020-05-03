@@ -4,8 +4,7 @@ import { useHistory } from "react-router-dom";
 import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
 import DraggableDialog from "./DraggableDialog";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap/bootstrap.js";
-
+import "bootstrap/dist/js/bootstrap";
 export const NavBar = () => {
   const [openDialLogout, setOpenDialLogout] = React.useState(false);
   const [user, setUser] = React.useState({ lastName: "", firsName: "" });
