@@ -78,7 +78,11 @@ const Menu = (props) => {
         onClick={handleClick}
       >
 <<<<<<< HEAD
+<<<<<<< HEAD
         {pages && pages.length > 0 ? (
+=======
+        {pages &&
+>>>>>>> parent of 1bd96fa... add no data found msg!
 =======
         {pages &&
 >>>>>>> parent of 1bd96fa... add no data found msg!
