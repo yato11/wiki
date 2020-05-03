@@ -51,7 +51,6 @@ export default function Page(props) {
     },
     avatar: {
       backgroundColor: red[500],
-      paddingRight: "5px",
     },
   }));
 
@@ -109,7 +108,7 @@ export default function Page(props) {
     Tracker.autorun(() => {
       populatePage();
     });
-    window.scrollTo({ top: 1000, behavior: "smooth" });
+    window.scrollTo({ top: 20000, behavior: "smooth" });
     // window.scrollTo(0, 1000);
   };
 
@@ -142,9 +141,11 @@ export default function Page(props) {
       <Card className={classes.root}>
         <CardHeader
           avatar={
-            <Avatar aria-label="recipe" className={classes.avatar}>
-              {data.author && data.author.firstName.toString().substr(0, 1)}
-            </Avatar>
+            <div className="mr-2">
+              <Avatar aria-label="recipe" className={classes.avatar}>
+                {data.author && data.author.firstName.toString().substr(0, 1)}
+              </Avatar>
+            </div>
           }
           action={
             <>

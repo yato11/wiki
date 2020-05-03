@@ -77,7 +77,7 @@ const Menu = (props) => {
         theme="light"
         onClick={handleClick}
       >
-        {pages ? (
+        {pages && pages.length > 0 ? (
           pages.map((p, index) => {
             return <MenuList.Item key={index}>{p.title}</MenuList.Item>;
           })

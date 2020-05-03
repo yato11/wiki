@@ -5,7 +5,7 @@ import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
 import DraggableDialog from "./DraggableDialog";
 import "jquery";
 import "bootstrap/dist/js/bootstrap";
-
+import "bootstrap/dist/css/bootstrap.css";
 export const NavBar = () => {
   const [openDialLogout, setOpenDialLogout] = React.useState(false);
   const [user, setUser] = React.useState({ lastName: "", firsName: "" });
