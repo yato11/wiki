@@ -11,5 +11,4 @@ Meteor.startup(() => {
   // console.log(process.env["MONGO_URL"]);
   // code to run on server at startup
   initData();
-  console.warn("Server Started...!");
 });

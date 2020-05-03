@@ -77,15 +77,14 @@ const Menu = (props) => {
         theme="light"
         onClick={handleClick}
       >
+<<<<<<< HEAD
         {pages && pages.length > 0 ? (
+=======
+        {pages &&
+>>>>>>> parent of 1bd96fa... add no data found msg!
           pages.map((p, index) => {
             return <MenuList.Item key={index}>{p.title}</MenuList.Item>;
-          })
-        ) : (
-          <il class="ant-menu-item ant-menu-item-only-child ">
-            No data found!
-          </il>
-        )}
+          })}
       </MenuList>
       <SearchBox onSearch={handleSearch} />
     </div>
