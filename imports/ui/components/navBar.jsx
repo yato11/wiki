@@ -3,13 +3,8 @@ import { Meteor } from "meteor/meteor";
 import { useHistory } from "react-router-dom";
 import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
 import DraggableDialog from "./DraggableDialog";
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import "bootstrap/dist/css/bootstrap.css";
-=======
->>>>>>> parent of 1bd96fa... add no data found msg!
-=======
->>>>>>> parent of 1bd96fa... add no data found msg!
 
 export const NavBar = () => {
   const [openDialLogout, setOpenDialLogout] = React.useState(false);
@@ -69,7 +64,7 @@ export const NavBar = () => {
                 setOpenDialLogout(true);
               }}
             >
-              LogOut
+              Logout
               {/* {`${user.firstName} ${user.lastName}`} */}
             </button>
           </li>
