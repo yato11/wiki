@@ -63,7 +63,7 @@ const Menu = (props) => {
   };
 
   return (
-    <div>
+    <div style={{ position: "fixed" }}>
       <MenuList
         className="mt-2 pr-2"
         // defaultSelectedKeys={["0"]}
@@ -71,7 +71,7 @@ const Menu = (props) => {
         selectedKeys={currentPage}
         mode="inline"
         style={{
-          height: "75vh",
+          height: "80vh",
           overflowX: "hidden",
         }}
         theme="light"

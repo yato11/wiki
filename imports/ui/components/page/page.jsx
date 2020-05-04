@@ -108,7 +108,7 @@ export default function Page(props) {
     Tracker.autorun(() => {
       populatePage();
     });
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
     // window.scrollTo(0, 1000);
   };
 

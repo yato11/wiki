@@ -132,7 +132,6 @@ const pageForm = (props) => {
     populateCategories();
   }, []);
   React.useEffect(() => {
-    console.log("3", pageData);
     register({ name: "team" }, { required: true });
     register({ name: "category.title" }, { required: true });
 
@@ -183,13 +182,13 @@ const pageForm = (props) => {
   };
 
   const editPage = (data, pageId) => {
+    console.log("edit page, new data:", data);
     const newData = _.pick(data, [
       "metadata",
       "meta",
       "title",
       "team",
       "content",
-      "title",
     ]);
 
     // const { error } = validatePage(data);
