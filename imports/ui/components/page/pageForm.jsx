@@ -83,16 +83,8 @@ const pageForm = (props) => {
         setValue("metadata", data.metadata);
         setValue("content", data.content);
 
-        console.log(
-          "item index initial : ",
-          teamList.indexOf(_.get(teamList, ["title", data.team]))
-        );
-        console.log(
-          "cat index initial : ",
-          categoryList.indexOf(
-            _.get(categoryList, ["title", data.category.title])
-          )
-        );
+        console.log("item index initial : ", teamList, data.team);
+        console.log("cat index initial : ", categoryList, data.category.title);
         // setTeamIndex(teamList.indexOf(_.get(teamList, ["title", data.team])));
         // setCategoryIndex(
         //   categoryList.indexOf(
@@ -133,10 +125,6 @@ const pageForm = (props) => {
   };
 
   useEffect(() => {
-    populatePage();
-    setIsFirst(false);
-  }, [props.match.params.id]);
-  useEffect(() => {
     populateTeams();
 
     populateCategories();
@@ -149,6 +137,10 @@ const pageForm = (props) => {
     setValue("category.title", categoryList[categoryIndex].title);
     register({ name: "content" });
   }, []);
+  useEffect(() => {
+    populatePage();
+    setIsFirst(false);
+  }, [props.match.params.id]);
 
   const renderInput = (name = "title", lable, type = "text", isRequierd) => {
     return (
@@ -198,6 +190,7 @@ const pageForm = (props) => {
       "meta",
       "title",
       "team",
+      "category",
       "content",
     ]);
 
