@@ -108,7 +108,7 @@ export default function Page(props) {
     Tracker.autorun(() => {
       populatePage();
     });
-    window.scrollTo({ top: 20000, behavior: "smooth" });
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     // window.scrollTo(0, 1000);
   };
 
@@ -168,7 +168,7 @@ export default function Page(props) {
               </Menu>
             </>
           }
-          title={data.title}
+          title={<h4>{data.title}</h4>}
           subheader={
             <div className="d-flex flex-column  ">
               <div className="row d-flex justify-content-between">
@@ -197,7 +197,9 @@ export default function Page(props) {
         image="/static/images/cards/paella.jpg"
         title="Paella dish"
       /> */}
-        <CardContent style={{ minHeight: 500, maxHeight: 1000 }}>
+        <CardContent
+          style={{ minHeight: 500, maxHeight: 1000, overflowY: "auto" }}
+        >
           <Typography variant="body2" color="textSecondary" component="div">
             <div dangerouslySetInnerHTML={{ __html: data.content }} />
           </Typography>
