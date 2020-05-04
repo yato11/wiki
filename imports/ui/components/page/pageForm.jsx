@@ -83,6 +83,16 @@ const pageForm = (props) => {
         setValue("metadata", data.metadata);
         setValue("content", data.content);
 
+        console.log(
+          "item index initial : ",
+          teamList.indexOf(_.get(teamList, ["title", data.team]))
+        );
+        console.log(
+          "cat index initial : ",
+          categoryList.indexOf(
+            _.get(categoryList, ["title", data.category.title])
+          )
+        );
         // setTeamIndex(teamList.indexOf(_.get(teamList, ["title", data.team])));
         // setCategoryIndex(
         //   categoryList.indexOf(
