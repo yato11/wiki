@@ -75,7 +75,7 @@ export default function SignUp(props) {
       (err) => {
         setServerError(err);
         err && console.log("Sign up  callback ", err);
-        if (!err) window.location = "/home";
+        if (!err) history.push("/home"); //window.location = "/home";
       }
     );
   };

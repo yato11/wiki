@@ -56,7 +56,7 @@ export default function LogIn(props) {
       setServerError(err);
       err && console.log("Login callback ", err);
       if (!err) {
-        window.location = "/home";
+        history.push("/home"); // window.location = "/home";
       }
     });
   };

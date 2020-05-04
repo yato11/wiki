@@ -4,6 +4,7 @@ import { Page, validatePage } from "../imports/apis/models/page";
 import { Meteor } from "meteor/meteor";
 
 export const initData = () => {
+  console.log("initData on the server...");
   setupTeams();
   setupCategories();
   setupPageIndexSearch();

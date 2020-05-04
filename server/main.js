@@ -1,6 +1,6 @@
 import { Meteor } from "meteor/meteor";
 import { initData } from "./init";
-import { Mongo } from "meteor/mongo";
+import moment from "moment";
 
 // const config = require("config");
 
@@ -11,5 +11,5 @@ Meteor.startup(() => {
   // console.log(process.env["MONGO_URL"]);
   // code to run on server at startup
   initData();
-  console.warn("Server Started...!");
+  console.log(`${moment().format()} - Server Started...!`);
 });
