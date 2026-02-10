@@ -22,7 +22,7 @@
     "lodash": "^4.17.15",
     "meteor-node-stubs": "^1.0.0",
     "moment": "^2.24.0",
-    "mongoose": "^5.9.10",
+    "mongoose": "^6.13.6",
     "pleasejs": "^0.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
