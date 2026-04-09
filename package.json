@@ -19,7 +19,7 @@
     "indexof": "0.0.1",
     "joi": "^14.3.1",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.18.1",
     "meteor-node-stubs": "^1.0.0",
     "moment": "^2.24.0",
     "mongoose": "^5.9.10",
